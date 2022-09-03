@@ -1,0 +1,204 @@
+:root {
+    --main-color : #19283f;
+    --secondary-color : #33d1cc;
+    --third-color: #ff3150;
+    --fourth-color:#ffc400;
+}
+* {
+    font-family: 'Roboto', sans-serif;
+}
+p { 
+    color: rgb(156, 156, 156);
+}
+::placeholder {
+    color: white;
+}
+li {
+    list-style: none;
+}
+a , a:hover {
+    text-decoration: none;
+    color:  rgb(156, 156, 156);
+}
+/* Start nav bar */
+.navbar {
+  background-color: var(--main-color);
+}
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+.navbar .navbar-nav .nav-link.active, 
+.navbar .navbar-nav .nav-link:hover, 
+.navbar .navbar-nav .nav-link:focus{
+    color: var(--secondary-color);
+}
+.navbar .search {
+    border-left: 1px solid var(--secondary-color);
+    cursor: pointer;
+}
+.navbar .search svg {
+    color: var(--secondary-color);
+}
+.navbar .navbar-toggler svg {
+    color: white;
+}
+.navbar .navbar-toggler:focus {
+    border-color: var(--secondary-color);
+}
+.btn, 
+.btn:hover {
+    background-color: var(--third-color);
+    color: var(--fourth-color);
+}
+/* End nav bar */
+/* start landing page */
+.landing {
+    height: calc(100vh - 70px);
+    background-color: var(--main-color);
+}
+.landing h1 {
+    font-size: calc(2rem + 1.5vw);
+}
+/* End landing page  */
+/* start services */
+.title {
+    position: relative;
+}
+.title::before{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    left: 50%;
+    bottom: -24px;
+    background-color: var(--secondary-color);
+    transform: translateX(-50%);
+}
+.service-img svg:nth-child(2){
+    color: #eff7fa;
+}
+.service-img {
+    font-size: 12rem;
+}
+.service-img .number {
+    width: 3rem;
+    transform: translateX(-50%);
+    color: var(--secondary-color);
+}
+.service h3 {
+    color: var(--fourth-color);
+}
+/* end services */
+/* start portfolio container */
+.portfolio-container {
+   background-color: #eff7fa;
+}
+.portfolio-container .container ul li:not(:first-child):hover {
+    color: var(--third-color);
+}
+.portfolio-imgs div::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: calc(100% - 10px);
+    top: 5px;
+    left: 21px;
+    background-color:#33d1ccb9;
+    transition: all .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+}
+.portfolio-imgs div:hover::before {
+    content: attr(data-app);
+    width: calc(100% - 42px);
+}
+.portfolio-imgs div img {
+    border: 5px solid #eee;
+}
+/* end portfolio container  */
+/* start team */
+.team-container {
+    background-color: #eff7fa;
+}
+.team-container h2 {
+    color: var(--fourth-color);
+}
+.text-band::before {
+    content: "Luke Skywalker";
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    left: 0;
+    bottom: 0;
+    background-color: #33d1cc;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    padding: 24px;
+}
+/* end team */
+/* start inscription */
+.inscription-container {
+    background-color: var(--main-color);
+}
+/* end inscription */
+/* start blog */
+.blog-img .blog-text {
+    border: 2px solid #eee;
+    border-top-color: transparent;
+    border-radius: 6px;
+}
+.blog-img img {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+/* end blog */
+/* start new letter */
+.news-letter-container {
+    background-color: var(--fourth-color);
+}
+.news-letter-container .btn {
+    background-color: var(--main-color);
+    height: fit-content;
+}
+.news-letter-container input {
+    outline: none;
+}
+/* end new letter */
+/* start contact us  */
+.contact-us-container {
+   background-color: var(--main-color);
+}
+.contact-us-container .copy-right p:nth-child(3) span{
+    color: var(--secondary-color);
+}
+.contact-us-container .copy-right p:nth-child(4) span{
+    color: var(--fourth-color);
+}
+.contact-us-container .container .contact-us .icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.contact-us-container .container .contact-us .icon:first-child {
+    background-color: #1878f2;
+}
+.contact-us-container .container .contact-us .icon:nth-child(2) {
+    background-color:#22a1f2;
+}
+.contact-us-container .container .contact-us .icon:nth-child(3) {
+    background-color: #1777b5;
+}
+.contact-us-container .container .contact-us .icon:nth-child(4){
+    background-color: #f91100;
+}
+/* end contact us */
+
+
+
